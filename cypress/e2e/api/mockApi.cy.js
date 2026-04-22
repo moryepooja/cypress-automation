@@ -1,4 +1,4 @@
-describe('Mock API Testing - Clean Version', () => {
+describe('Mock API Testing', () => {
   it('Mocks successful API response', () => {
     // Mock API
     cy.intercept('GET', '**/api/users?page=2', {
