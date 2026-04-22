@@ -14,7 +14,7 @@ describe('Env Based Test', () => {
       'getUsers'
     )
 
-    cy.visit('https://reqres.in')
+    cy.visit(Cypress.config('baseUrl'))
 
     // Trigger AFTER visit
     cy.window().then((win) => {

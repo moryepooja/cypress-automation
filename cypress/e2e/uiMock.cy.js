@@ -7,7 +7,7 @@ describe('UI + Mock API Flow', () => {
     }).as('getUsers')
 
     // Step 2: Visit page
-    cy.visit('https://reqres.in')
+    cy.visit(Cypress.config('baseUrl'))
 
     // Step 3: Trigger API call from browser
     cy.window().then((win) => {

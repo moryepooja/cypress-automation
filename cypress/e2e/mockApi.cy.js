@@ -46,7 +46,7 @@ describe('Mock API Testing - Clean Version', () => {
       body: { data: [] },
     }).as('getUsersEmpty')
 
-    cy.visit('https://reqres.in')
+    cy.visit(Cypress.config('baseUrl'))
 
     cy.window().then((win) => {
       return win.fetch('https://reqres.in/api/users?page=2')

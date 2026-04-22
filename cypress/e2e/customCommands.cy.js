@@ -13,7 +13,7 @@ describe('Custom Commands - Advanced API Mock', () => {
       'getUsers'
     )
 
-    cy.visit('https://reqres.in')
+    cy.visit(Cypress.config('baseUrl'))
 
     // 🔹 Trigger API
     cy.triggerApi(url)
