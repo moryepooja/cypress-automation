@@ -1,17 +1,22 @@
-# Cypress Automation Framework
+## Tech Stack
 
-## Features
+- Cypress
+- JavaScript
+- GitHub Actions (CI/CD)
 
-- Cypress E2E tests
-- API mocking using cy.intercept
-- Custom reusable commands
+## Framework Features
+
+- Page Object Model
+- Custom Commands
+- API Mocking using cy.intercept
 - Environment-based configuration
-- CI/CD using GitHub Actions
 
-## Run locally
+## How to Run
+
+### Local
 
 npx cypress open
 
-## Run in CI
+### CI
 
-Triggered automatically on push to main branch
+Runs automatically on push to main branch
