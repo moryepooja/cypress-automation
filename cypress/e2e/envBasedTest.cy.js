@@ -15,7 +15,7 @@ describe('Env Based Test', () => {
     )
 
     cy.triggerApi(`${apiUrl}/users?page=2`)
-
+    cy.wait('@getUsers', { timeout: 10000 })
     cy.getApiResponse('getUsers').then((response) => {
       cy.validateResponse(response, { status: 200, length: 2 })
     })
