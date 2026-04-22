@@ -9,6 +9,7 @@ function getConfigurationByFile(file) {
 
 module.exports = defineConfig({
   e2e: {
+    baseUrl: 'https://reqres.in',
     setupNodeEvents(on, config) {
       const file = config.env.config || 'dev'
       const envConfig = getConfigurationByFile(file)
