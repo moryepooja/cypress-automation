@@ -1,4 +1,4 @@
-import productPage from '../pages/productPage'
+import productPage from '../../pages/productPage'
 
 describe('API + UI Validation - Automation Exercise', () => {
   before(function () {
